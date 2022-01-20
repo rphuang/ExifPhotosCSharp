@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExifPhotos.PickFolderPage">
+    <ContentPage.ToolbarItems >
+        <ToolbarItem Text="Open" Clicked="OpenToolbarItem_Clicked" />
+        <ToolbarItem Text="Pick" Clicked="PickToolbarItem_Clicked" />
+        <ToolbarItem Text="Quit" Clicked="QuitToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+                <StackLayout x:Name="ContentStackLayout" Spacing="4" Padding="4" >
+                    <!--<CheckBox x:Name="ParentFolderCheckBox" HorizontalOptions="End" />
+                    <Label Text="Parent Folder" HorizontalOptions="Start" VerticalOptions="Center" FontSize="Medium" />-->
+                </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

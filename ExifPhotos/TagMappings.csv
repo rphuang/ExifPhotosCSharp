@@ -1,0 +1,30 @@
+# Name,Directory,TagName
+
+# for Pentax (KD20)
+Quality,Casio Makernote,Quality Mode
+White Balance,Casio Makernote,White Balance
+# ????
+Camera Temperature,Casio Makernote,Unknown tag (0x0047)
+
+# for Nikon (D5600, P300)
+Firmware Version,Nikon Makernote,Firmware Version
+Lens,Nikon Makernote,Lens
+LensModel,Nikon Makernote,Lens Type
+Quality,Nikon Makernote,Quality & File Format
+White Balance,Nikon Makernote,White Balance
+White Balance Fine,Nikon Makernote,White Balance Fine
+AF Type,Nikon Makernote,AF Type
+Flash Sync,Nikon Makernote,Flash Sync Mode
+Flash Mode,Nikon Makernote,Auto Flash Mode
+Drive Mode,Nikon Makernote,Shooting Mode
+Sequence Number,Nikon Makernote,Exposure Sequence Number
+Noise Reduction,Nikon Makernote,Noise Reduction
+Noise Reduction,Nikon Makernote,High ISO Noise Reduction
+Stabilization,Nikon Makernote,Image Stabilization
+
+# for Panasonic (ZS100)
+Quality,Panasonic Makernote,Quality Mode
+White Balance,Panasonic Makernote,White Balance
+AF Area Mode,Panasonic Makernote,AF Area Mode
+Stabilization,Panasonic Makernote,Image Stabilization
+Photo Style,Panasonic Makernote,Photo Style

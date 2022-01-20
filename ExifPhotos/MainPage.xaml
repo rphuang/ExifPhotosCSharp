@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExifPhotos.MainPage">
+
+    <ContentPage.ToolbarItems >
+        <ToolbarItem x:Name="PrevButton" Text="Prev" Clicked="PrevButton_Clicked" Order="Primary" Priority="1"/>
+        <ToolbarItem x:Name="NextButton" Text="Next" Clicked="NextButton_Clicked" Order="Primary" Priority="2"/>
+        <ToolbarItem x:Name="OpenButton" Text="Open" Clicked="OpenButton_Clicked" Order="Secondary" />
+        <!--<ToolbarItem Text="Settings" Order="Secondary" />-->
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <StackLayout>
+            <StackLayout x:Name="ImageStack" Spacing="4" Padding="4" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+            </StackLayout>
+            <StackLayout x:Name="ExifDataStack" Orientation="Horizontal" Spacing="4" Padding="4" >
+                
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
