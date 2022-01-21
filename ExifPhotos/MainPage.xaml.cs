@@ -22,14 +22,14 @@ namespace ExifPhotos
             int width = Math.Min((int)Device.Info.ScaledScreenSize.Width - 10, ExifPhotosSettings.ImageWidthRequest);
             int height = Math.Max(width * 3 / 4, ExifPhotosSettings.ImageHeightRequest);
             _image = new ZoomImage() { HeightRequest = height, WidthRequest = width };
-            ImageStack.Children.Add(_image);
             // todo: swipe doesn't work?
             var leftSwipeGesture = new SwipeGestureRecognizer { Direction = SwipeDirection.Left };
             leftSwipeGesture.Swiped += OnSwipedLeft;
-            ImageStack.GestureRecognizers.Add(leftSwipeGesture);
+            ExifDataStack.GestureRecognizers.Add(leftSwipeGesture);
             var rightSwipeGesture = new SwipeGestureRecognizer { Direction = SwipeDirection.Right };
             rightSwipeGesture.Swiped += OnSwipedRight;
-            ImageStack.GestureRecognizers.Add(rightSwipeGesture);
+            ExifDataStack.GestureRecognizers.Add(rightSwipeGesture);
+            ImageStack.Children.Add(_image);
 
             // create grids and initialize tag list to be displayed for each grid
             int numberOfGrids = ExifPhotosSettings.NumberOfGrids;
@@ -182,17 +182,6 @@ namespace ExifPhotos
         private async void OpenButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new NavigationPage(new PickFolderPage(_photoList)));
-            //UpdateDisplay();
-            //string result = await DisplayPromptAsync("Open Photo", "Enter full path of the photo file");
-            //if (!string.IsNullOrEmpty(result))
-            //{
-            //    _photoIndex = 0;
-            //    _photoList.Clear();
-            //    _photoList.Add(result);
-            //    UpdateDisplay();
-            //}
-            //// get root folder
-            //string folderPath = FolderUtil.GetFolderPath(null, false);
         }
 
         private void NextButton_Clicked(object sender, EventArgs e)

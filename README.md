@@ -1,6 +1,9 @@
 # Exif Photos
 This is an EXIF Metadata Viewer for Android. UWP will be in future development.
-Currently, ExifPhotos uses MetadataExtractor to extract EXIF from file. It is not as good as ExifTool but it is good enough for using in Android to view most important EXIF info.
+ExifPhotos provides flexible UI and extensible metadata extraction.
+* Flexible - customize your own list of tags to display
+* Extensible - customize your own metadata mapping to extract
+Currently, ExifPhotos uses MetadataExtractor to extract EXIF from file. The data quality of MetadataExtractor is not as good as ExifTool but it is good enough for using in Android to view most important EXIF info.
 
 # Getting Started
 1. Get code from https://github.com/rphuang/LibsCSharp Assume that the code is under <parent>\LibsCSharp
@@ -18,6 +21,7 @@ Currently, ExifPhotos uses MetadataExtractor to extract EXIF from file. It is no
 * IncludeSubFolder - include sub folders when pick a folder
 * TagMappingFile - custom tag mapping files with comma separated file names or full pathnames. See next for details.
 * Group - defines the tags to be displayed in the grid. The Index property defines which grid (all 0 for the single grid). The Tags property defines comma separated tag names.
+
 ## Custom Tag Mappings
 The TagMappings.csv contains some examples of custom mappings.
 * One line per mapping with format Name,DirectoryName,TagName where
@@ -28,7 +32,7 @@ The TagMappings.csv contains some examples of custom mappings.
 * Empty lines are ignored
 
 # Issues & Future Development
-* Not sure why swipe gesture doesn't work
+* Swipe (left right) gesture is only available on the grid. Not sure why it doesn't work on Image but work on the grid's stack.
 * Develop UWP version with special file access code
 * Leverage ExifTool (at least on Windows version)
 * Open page (PickFolderPage) needs a re-write 
