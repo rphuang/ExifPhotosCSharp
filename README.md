@@ -1,5 +1,5 @@
 # Exif Photos
-This is an EXIF Metadata Viewer for Android. UWP will be in future development.
+This is an EXIF Metadata Viewer for Android.
 ExifPhotos provides flexible UI and extensible metadata extraction.
 * Flexible - customize your own list of tags to display
 * Extensible - customize your own metadata mapping to extract
@@ -33,7 +33,7 @@ The TagMappings.csv contains some examples of custom mappings.
 
 # Issues & Future Development
 * Swipe (left right) gesture is only available on the grid. Not sure why it doesn't work on Image but work on the grid's stack.
-* Develop UWP version with special file access code
+* ~~Develop UWP version with special file access code~~ It makes no sense to support UWP since the System.IO cannot be used in UWP.
 * Leverage ExifTool (at least on Windows version)
 * Open page (PickFolderPage) needs a re-write 
 
